@@ -5,16 +5,35 @@ public class Card {
     private final int suit;
 
     // Kinds of suits
-    public final static int DIAMONDS = 1; public final static int CLUBS = 2; public final static int HEARTS = 3; public final static int SPADES = 4;
+    public final static int DIAMONDS = 1; 
+    public final static int CLUBS = 2;
+    public final static int HEARTS = 3; 
+    public final static int SPADES = 4;
 
     // Kinds of ranks
-    public final static int ACE	= 1; public final static int DEUCE = 2; public final static int THREE = 3; public final static int FOUR	= 4; public final static int FIVE	= 5; public final static int SIX	= 6; public final static int SEVEN = 7; public final static int EIGHT = 8; public final static int NINE	= 9; public final static int TEN	= 10; public final static int JACK	= 11; public final static int QUEEN = 12; public final static int KING	= 13;
+    public final static int ACE	= 1; 
+    public final static int DEUCE = 2; 
+    public final static int THREE = 3; 
+    public final static int FOUR = 4; 
+    public final static int FIVE = 5; 
+    public final static int SIX	= 6; 
+    public final static int SEVEN = 7; 
+    public final static int EIGHT = 8; 
+    public final static int NINE = 9;
+    public final static int TEN	= 10;
+    public final static int JACK = 11; 
+    public final static int QUEEN = 12;
+    public final static int KING = 13;
 
-    public Card(int rank, int suit) { assert isValidRank(rank); assert isValidSuit(suit); this.rank = rank;
-    this.suit = suit;
+    public Card(int rank, int suit) { 
+        assert isValidRank(rank); 
+        assert isValidSuit(suit); 
+        this.rank = rank;
+        this.suit = suit;
     }
 
-    public int getSuit() { return suit;
+    public int getSuit() { 
+        return suit;
     }
 
     public int getRank() {
@@ -34,23 +53,23 @@ public class Card {
         case ACE:
             return "Ace"; 
         case DEUCE:
-            return "Deuce";
+            return "2";
         case THREE:
-            return "Three";
+            return "3";
         case FOUR:
-            return "Four";
+            return "4";
         case FIVE:
-            return "Five";
+            return "5";
         case SIX:
-            return "Six"; 
+            return "6"; 
         case SEVEN:
-            return "Seven";
+            return "7";
         case EIGHT:
-            return "Eight"; 
+            return "8"; 
         case NINE:
-            return "Nine"; 
+            return "9"; 
         case TEN:
-            return "Ten"; 
+            return "10"; 
         case JACK:
             return "Jack"; 
         case QUEEN:
