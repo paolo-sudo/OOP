@@ -1,3 +1,8 @@
+/*
+Paolo S.
+CS 2-1 | OE1
+*/
+
 package OE1;
 public class my_animal {
 
